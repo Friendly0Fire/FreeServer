@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Folder Structure
+bin/*
+dist/*
+
+# Visual Studio
+.vs
+*.user
