@@ -21,6 +21,10 @@ jobs:
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1
 
+    - name: Run vcpkg
+      working-directory: ${{env.GITHUB_WORKSPACE}}
+      run: setup-vcpkg.bat --vcpkg-root=./vcpkg-root
+
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: nuget restore ${{env.SOLUTION_FILE_PATH}}

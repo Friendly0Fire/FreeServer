@@ -1,0 +1,6 @@
+[submodule "third/flat_hash_map"]
+	path = third/flat_hash_map
+	url = https://github.com/skarupke/flat_hash_map.git
+[submodule "third/object_ptr"]
+	path = third/object_ptr
+	url = https://github.com/anthonywilliams/object_ptr.git
