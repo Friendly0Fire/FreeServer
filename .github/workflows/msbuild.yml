@@ -23,7 +23,7 @@ jobs:
 
     - name: Run vcpkg
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: mkdir vcpkg-root && ./setup-vcpkg.bat --vcpkg-root=${{env.GITHUB_WORKSPACE}}\vcpkg-root
+      run: ./setup-vcpkg.bat
 
     - name: Restore NuGet packages
       working-directory: ${{env.GITHUB_WORKSPACE}}
