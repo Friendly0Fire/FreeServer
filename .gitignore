@@ -40,3 +40,4 @@ dist/*
 *.user
 /FreeServer.TestSuites/x64/Debug
 /vs/x64/Debug
+/vs/packages.config

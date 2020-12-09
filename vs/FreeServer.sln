@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeServer", "FreeServer.vcxproj", "{AE656664-7EB8-4DAD-9B3B-E72268FBEC45}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeServer.TestSuites", "..\FreeServer.TestSuites\FreeServer.TestSuites.vcxproj", "{58B50803-1D62-4C26-B49B-22B9030109CB}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeServer.TestSuites", "FreeServer.TestSuites.vcxproj", "{58B50803-1D62-4C26-B49B-22B9030109CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

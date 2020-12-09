@@ -33,11 +33,11 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClInclude Include="pch.h" />
+    <ClInclude Include="../tests/pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sample_unit_tests.cpp" />
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="../tests/sample_unit_tests.cpp" />
+    <ClCompile Include="../tests/pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -45,7 +45,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\vs\FreeServer.vcxproj">
+    <ProjectReference Include=".\FreeServer.vcxproj">
       <Project>{ae656664-7eb8-4dad-9b3b-e72268fbec45}</Project>
     </ProjectReference>
   </ItemGroup>
