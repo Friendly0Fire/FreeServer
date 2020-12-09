@@ -38,3 +38,5 @@ dist/*
 # Visual Studio
 .vs
 *.user
+/FreeServer.TestSuites/x64/Debug
+/vs/x64/Debug

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="sample_unit_tests.cpp">
+      <Filter>Unit Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Unit Tests">
+      <UniqueIdentifier>{f02d9526-e315-48fb-ad0f-4e85ff45a7e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IntegrationTests">
+      <UniqueIdentifier>{c4355416-07a8-42ec-8768-af142c6c9167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Acceptance Tests">
+      <UniqueIdentifier>{d0dffdb7-a907-4fee-8926-592a4c049676}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
