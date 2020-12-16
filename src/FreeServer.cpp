@@ -1,17 +1,23 @@
 // FreeServer.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
+#include <g3log/g3log.hpp>
+#include <g3log/logworker.hpp>
+#include <iomanip>
 
-int main()
+int main(int argc, char **argv)
 {
-    std::cout << "Hello World!\n";
+    auto worker = g3::LogWorker::createLogWorker();
+    auto handle = worker->addDefaultLogger(argv[0], "./");
+    g3::initializeLogging(worker.get());
+
+    LOG(INFO) << "Hello World!\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
-// Tips for Getting Started: 
+// Tips for Getting Started:
 //   1. Use the Solution Explorer window to add/manage files
 //   2. Use the Team Explorer window to connect to source control
 //   3. Use the Output window to see build output and other messages
