@@ -4,3 +4,6 @@
 [submodule "third/object_ptr"]
 	path = third/object_ptr
 	url = https://github.com/anthonywilliams/object_ptr.git
+[submodule "third/g3log"]
+	path = third/g3log
+	url = https://github.com/KjellKod/g3log.git

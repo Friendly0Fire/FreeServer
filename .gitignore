@@ -34,6 +34,7 @@
 # Folder Structure
 bin/*
 dist/*
+tmp/*
 
 # Visual Studio
 .vs

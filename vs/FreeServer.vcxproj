@@ -47,11 +47,15 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)..\dist\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\tmp\g3log\include;$(SolutionDir)..\third\g3log\src;$(SolutionDir)..\third\flat_hash_map;$(SolutionDir)..\third\object_ptr;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\tmp\g3log\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(SolutionDir)..\dist\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\bin\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>$(SolutionDir)..\tmp\g3log\include;$(SolutionDir)..\third\g3log\src;$(SolutionDir)..\third\flat_hash_map;$(SolutionDir)..\third\object_ptr;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)..\tmp\g3log\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -71,7 +75,11 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>g3log.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)prebuild.bat</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -95,7 +103,11 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>g3log.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>$(SolutionDir)prebuild.bat</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="../src/FreeServer.cpp" />
