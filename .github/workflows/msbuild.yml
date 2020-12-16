@@ -18,9 +18,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
-
-    - name: Checkout Submodules
-      uses: textbook/git-checkout-submodule-action@master
+      with:
+        submodules: recursive
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1
